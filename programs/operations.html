@@ -1,0 +1,99 @@
+<html>
+	<body>
+	<form>
+	<h3>Binary Operators : </h3>
+	number 1: <input type="number" id="t1">
+	number 2: <input type="number" id="t2">
+	Operation:   <select id="f1">
+					<option value="*">MUL</option>
+					<option value="+">ADD</option>
+					<option value="-">SUB</option>
+					<option value="/">DIV</option>
+					<option value="%">MOD</option>
+					<option value="pow">POW</option>
+					<option value=">>">Right Shift</option>
+					<option value="<<">Left Shift</option>
+				</select>
+	<input type="button" value="do" onclick="check()">
+	
+	<h3>Unary Operators</h3>
+	
+	number : <input type="text" id="n1">
+	Operation:   <select id="f2">
+					<option value="s">SQRT</option>
+					<option value="c">CBRT</option>
+					<option value="l">LOG</option>
+				</select>
+	<input type="button" value="do" onclick="check1()">
+	</form>
+	<script>
+			function check()
+			{
+				var x= document.getElementById("t1");
+				var y= document.getElementById("t2");
+				var z= document.getElementById("f1");
+				var a;
+				switch (z.value)
+				{
+					case '+':
+						a=(parseInt(x.value) + parseInt(y.value));
+						break;
+					case '-':
+						a=(+x.value - +y.value);
+						break;
+					case '*':
+						a=(+x.value * +y.value);
+						break;
+					case '/':
+						a=(+x.value / +y.value);
+						break;
+					case '%':
+						a=(+x.value % +y.value);
+						break;
+					case '>>':
+						a=(+x.value >> +y.value);
+						break;
+					case '<<':
+						a=(x.value << y.value);
+						break;
+					case 'pow':
+						a=Math.pow(x.value,y.value);
+						break;
+					
+					
+				}
+				func(a);
+				
+				
+			}
+			
+			function check1()
+			{
+				var num= document.getElementById("n1");
+				var z= document.getElementById("f2");
+				var a;
+				
+				switch (z.value)
+				{
+					case 's':
+						a=Math.sqrt(parseInt(num.value));
+						break;
+					case 'c':
+						a=Math.cbrt(+num.value);
+						break;
+					case 'l':
+						a=Math.log(+num.value);
+						break;
+				}
+				func(a);
+			}
+			
+			function func(a)
+				{
+					alert("Answer : "+a);
+					
+					
+				}
+		</script>
+	</body>
+</html>

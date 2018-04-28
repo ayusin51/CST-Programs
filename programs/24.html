@@ -1,0 +1,21 @@
+<html>
+<body>
+<h3>cars list</h3>
+<ul id="div1">
+<li id="p1">audi</li>
+<li id="p2">bmw</li>
+<li id="p3">jaguar</li>
+</ul>
+<script>
+var para = document.createElement("li");
+var node = document.createTextNode("maggi");
+//crete child node.
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para); //append child
+//remove child.
+var child= document.getElementById("p3");
+element.removeChild(child);
+</script>
+</body>
+</html>

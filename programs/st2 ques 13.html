@@ -1,0 +1,38 @@
+<DOCTYPE HTML>
+<html>
+	<body>
+		<ol id="list">
+		<li>Data Structures</li><li>Android</li><li>Java</li><li>iOS</li><li id="ds">Front End Developmemt</li>
+		</ol>
+		<input type="text" id="i1"><input type="button" onclick="myfunc()" value="Add"><br>
+		<input type="text" id="i2"><input type="button" onclick="myfunc2()" value="Remove"><br>
+		<input type="text" id="i3"><input type="button" onclick="myfunc3()" value="Replace"><br>
+		
+		<script>
+			function myfunc()
+			{
+				var a=document.getElementById('i1');
+				var node=document.createElement("li");
+				var txtNode=document.createTextNode(a.value);
+				node.appendChild(txtNode);
+				document.getElementById("list").appendChild(node);
+			}
+			function myfunc2()
+			{
+				var n=document.getElementById("i2").value;
+				var list=document.getElementById("list");
+				list.removeChild(list.childNodes[n]);
+			}
+			function myfunc3()
+			{
+				
+				var li = document.createElement("li");
+				var node = document.createTextNode(document.getElementById('i3').value);
+				li.appendChild(node);
+				var parent = document.getElementById("list");
+				parent.replaceChild(li,ds);
+			}
+			
+		</script>
+	</body>
+</html>

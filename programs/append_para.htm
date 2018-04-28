@@ -1,0 +1,19 @@
+<DOCTYPE HTML>
+<html>
+	<body>
+		<p id="pa">
+			Hello sirrr,...................
+		</p>
+		<input type="button" onclick="myfunc()" value="try">
+		
+		<script>
+			function myfunc()
+			{
+				var para=document.createElement("p");
+				var txt=document.createTextNode("Bye Bye....");
+				para.appendChild(txt);
+				document.getElementById("pa").appendChild(para);
+			}
+		</script>
+	</body>
+</html>

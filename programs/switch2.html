@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<input type="number" id="num" onfocus="focusa(this)"><input type="button" onclick="my()" value="Click me">
+</form>
+<p id="demo"></p>
+
+<script>
+
+function focusa(x)
+{
+	x.style.background="grey";
+}
+
+function my()
+{
+var x = document.getElementById("num");
+	switch (x.value) 
+		{
+		case '0':
+			num = "0";
+			x.style.background="blue";
+			break;
+		case '1':
+			num = "1";
+			x.style.background="green";
+			break;
+		case '2':
+			num = "2";
+			x.style.background="yellow";
+			break;
+		case '3':
+			num = "3";
+			x.style.background="pink";
+			break;
+		
+		default:
+			num="some num";
+			x.style.background="red";
+			
+		}
+	document.getElementById("demo").innerHTML = "You entered " + num;
+}
+
+
+</script>
+
+</body>
+</html>

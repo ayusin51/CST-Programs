@@ -1,0 +1,27 @@
+<html>
+<body>
+<p id="demo">Hello</p>
+<h4>getElementById</h4>
+<button onclick="myFunction()">Try it</button>
+<H1> Hi </H1>
+<h4>getElementByTag</h4>
+<button onclick="myFunction1()">Try it</button>
+<div class="example">Div element with class:"example"</div>
+<h4>getElementByClassName</h4>
+<button onclick="myFunction2()">Try it</button>
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello World!";
+}
+function myFunction1()
+{
+var y = document.getElementsByTagName("H1");
+y[0].innerHTML = "Hello World!";
+}
+function myFunction2() {
+var x = document.getElementsByClassName("example");
+x[0].innerHTML = "Hello World!";
+}
+</script>
+</body>
+</html>

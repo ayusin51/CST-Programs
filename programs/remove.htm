@@ -1,0 +1,21 @@
+<DOCTYPE HTML>
+<html>
+	<body>
+		<ul id="list">
+			<li>Data Structures</li>
+			<li>Android</li>
+			<li>Java</li>
+			<li>iOS</li>
+			<li>Front End Developmemt</li>
+		</ul>
+		<input type="button" onclick="myfunc()" value="try">
+		
+		<script>
+			function myfunc()
+			{
+				var list=document.getElementById("list");
+				list.removeChild(list.firstElementChild);
+			}
+		</script>
+	</body>
+</html>

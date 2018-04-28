@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+<BUTTON onclick="open1()">CLICK HERE TO OPEN </BUTTON><br><br>
+<button onclick="resize1()">CLICK TO RESIZE AND MOVE</button><br><br>
+<button onclick="close1()">CLOSE</button>
+<h1>History Object</h1><hr>
+<button id="back" onclick="history_back()">BACK</button>&nbsp&nbsp
+<button id="forward" onclick="history_forward
+()">FORWARD</button>&nbsp&nbsp
+<button onclick="length()">LENGTH</button>
+<script>
+function open1()
+{
+x = window.open("","parent","height=400,width=500"," ");
+window.alert("Outer width is " + window.outerWidth);
+window.alert("Outer height is " + window.outerHeight);
+window.alert("Inner Height is " + window.innerWidth);
+window.alert("Inner Width is " + window.innerHeight);
+}
+function resize1()
+{
+x.resizeBy(200,400);
+x.moveBy(100,100);
+}
+function close1()
+{
+y=x.close();
+}
+function history_back()
+{
+history.back();
+}
+function history_forward()
+{
+history.forward();
+}
+function length()
+{
+alert("History.length = " + history.length);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+	<head>
+    	<title></title>
+        <style>
+        	#box{
+				text-align:center;
+				float:left;
+				border:1px solid black;
+				overflow:auto;
+				width:100%;
+				background-color:#CCC;
+				
+				margin:10px;
+				}
+			#img{
+				float:right;
+				border:1px solid black;
+				
+				}
+				#list{
+					list-style:none;
+					}
+			.listelts{
+				border:1px solid black;
+				margin:5px;
+				padding:10px;
+				}
+			#listbox{
+				clear:both;
+				border-right:1px solid black;
+				width:100px;
+				padding-right:20px;
+				margin:10px;
+				background-color:#F00;
+				float:left;
+				}
+			#article{
+				background-color:#666;
+				float:left;
+				padding:10px;
+				margin:10px;
+				text-align:center;
+				}
+        </style>
+    </head>
+    <body>
+    	
+        <div id="box">
+        	this is the box
+            <img id="img" src="pics/chitkara-university-logo.png">
+        </div>
+        <div id="listbox">
+        	<ol id="list">
+            	<li><div class="listelts">txt1</div>
+                <li><div class="listelts">txt2</div>
+                <li><div class="listelts">txt3</div>
+                <li><div class="listelts">txt4</div>
+                <li><div class="listelts">txt5</div>
+            </ol>
+        </div>
+        <article id="article">
+        	<h1>This is an article</h1>
+            <p>This enumerated attribute is intended to provide a hint> to the browser about what the author thinks will <br>lead to the best user experience It may have one of the following values:<br>
+none:indicates that the audio should not be preloaded;<br>
+metadata: indicates that only audio metadata (e.g. length) is fetched;<br>
+auto: indicates that the whole audio file could be downloadedeven if the user is not expected to use it;<br>
+the empty string: synonym of the auto value.<br>metadata: indicates that only audio metadata (e.g. length) is fetched;<br>
+auto: indicates that the whole audio file could be downloadedeven if the user is not expected to use it;<.<br></p>
+        </article>
+    </body>
+</html>

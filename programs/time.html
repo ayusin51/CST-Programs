@@ -1,0 +1,85 @@
+<html>
+	<body>
+	<input type="button" value="print time" onclick="show()">
+	<p id="time"></p>
+	
+		<script>
+			function show()
+			{
+				
+				var data=[];
+				var d = new Date();
+				 data[1] = d.getDate();
+				 switch (d.getDay()) {
+					case 0:
+						data[0] = "Sunday";
+						break;
+					case 1:
+						data[0] = "Monday";
+						break;
+					case 2:
+						data[0] = "Tuesday";
+						break;
+					case 3:
+						data[0] = "Wednesday";
+						break;
+					case 4:
+						data[0] = "Thursday";
+						break;
+					case 5:
+					   data[0] = "Friday";
+						break;
+					case 6:
+						data[0] = "Saturday";
+				}
+				switch (d.getMonth()) {
+					
+					case 1:
+						data[2] = "Jan";
+						break;
+					case 2:
+						data[2] = "Feb";
+						break;
+					case 3:
+						data[2] = "March";
+						break;
+					case 4:
+						data[2] = "April";
+						break;
+					case 5:
+					   data[2] = "May";
+						break;
+					case 6:
+						data[2] = "June";
+						break;
+					case 7:
+						data[2] = "July";
+						break;
+					case 8:
+						data[2] = "Aug";
+						break;
+					
+					case 9:
+						data[2] = "Sep";
+						break;
+					case 10:
+					   data[2] = "Oct";
+						break
+					case 11:
+						data[2] = "Nov";
+						break;
+					case 12:
+					   data[2] = "Dec";
+						break;
+					
+				}
+				//data[3] = d.getHours();
+				//data[3] = d.getMilliseconds();
+				data[3]=d.getFullYear();
+				//data[3]=d.getMinutes();
+				//data[3]=d.getSeconds();
+				document.write(data);
+			}
+		</script>
+	</body>
+</html>
